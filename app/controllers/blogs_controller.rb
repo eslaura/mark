@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
   end
 
   def new           # GET /restaurants/new
+    @blog = Blog.new
   end
 
   def create        # POST /restaurants
