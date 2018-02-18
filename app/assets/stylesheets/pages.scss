@@ -8,8 +8,13 @@
 body{
   margin: 0;
   font-family: Raleway;
+  padding:0;
+  height:100%;
 }
-
+.frame{
+  position:relative;
+  height:100vh;
+}
 //Navbar
 
 .logo{
@@ -82,13 +87,22 @@ a{
 .body-width{
   width: 1000px;
   margin: 0 auto;
-  height: 60vh;
+  height: 62vh;
+}
+
+.body-height{
+
 }
 
 .main-content{
   display: flex;
   align-items: center;
   height: 68vh;
+}
+
+.blog{
+  width:60%;
+  margin: 0 auto;
 }
 
 .col{
@@ -102,8 +116,15 @@ a{
 // footer
 
 .footer{
-  background-color: #212529;
+  // background-color: #212529;
+  background-color: black;
   height: 70px;
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index:999999999999;
 }
 
 .nav-item-list{

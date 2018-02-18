@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
 
   def index         # GET /restaurants
-    @blogs = BLOGS
+    @blogs = Blog.all
   end
 
   def show          # GET /blogs/:id
@@ -24,8 +24,3 @@ class BlogsController < ApplicationController
   def destroy       # DELETE /restaurants/:id
   end
 end
-
-BLOGS = {
-    1 => { title: "First Blog Post", copy: "Shoreditch" },
-    2 => { title: "Second Blog Post", copy: "City"}
-  }

@@ -1,6 +1,8 @@
-<div class="body-width main-content">
-  <% @blogs.each do |blog| %>
-  <h2><%= blog.title %></h2>
-  <p><%= blog.body %></p>
-<% end %>
+<div class="blog body-width">
+  <div class="body-height">
+    <% @blogs.each do |blog| %>
+    <h2><%= blog.title %></h2>
+    <p><%= blog.body %></p>
+  <% end %>
+  </div>
 </div>
