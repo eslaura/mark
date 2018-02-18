@@ -1,3 +1,46 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  box-sizing: border-box;
+}
+
+//Navbar
+
+.logo{
+  text-align: center;
+  font-family: 'Kavivanar', cursive;
+  font-size: 30px;
+}
+
+.navbar{
+ background-color: #C1DFF0;
+ opacity: 0.8;
+ color: black;
+ margin: 0 auto;
+ height: 70px;
+ border-top: 3px solid #2C6F87;
+}
+
+.nav-item-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 750px;
+  margin: 25px auto;
+
+}
+
+li{
+  list-style: none;
+  text-transform: uppercase;;
+}
+
+//main content
+
+
+.main-content{
+  margin: 0 auto;
+  width: 1000px;
+  color: red;
+}
