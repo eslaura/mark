@@ -31,8 +31,17 @@ body{
   color:black;
 }
 
-.header{
-  position: relative;
+.header, .navigation{
+  position: fixed;
+  z-index: 9;
+}
+
+.navigation{
+  background-color: #212529;
+  margin: auto;
+  height: 90px;
+  width:100%;
+  border-top: 3px solid #2C6F87;
 }
 
 
@@ -41,14 +50,17 @@ body{
  color: white;
  margin: 0 auto;
  height: 70px;
- border-top: 3px solid #2C6F87;
+
+
 }
+
 
 .nav-item-list{
   display: flex;
   align-items: center;
-  width: 800px;
-  margin: 25px auto;
+  width: 80%;
+  // margin: 10px auto;
+  margin: auto;
 }
 
 .header{
@@ -91,6 +103,8 @@ a{
 }
 
 .body-height{
+  width: 60%;
+  padding: 40px 0;
 
 }
 
@@ -103,6 +117,7 @@ a{
 .blog{
   width:60%;
   margin: 0 auto;
+  margin-bottom: 250px;
 }
 
 .col{
@@ -122,12 +137,23 @@ a{
   width:100%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  background-color: black;
+  // left: 0;
+  background-color:  #212529;;
   z-index:999999999999;
+  margin: auto;
+  padding-left: 10%;
 }
 
-.nav-item-list{
-  padding: 20px;
-  margin: 0 auto;
+// testimonial
+
+.left-testimonial{
+  width: 70%;
 }
+
+.right-testimonial{
+  width: 70%;
+  margin-left: 30%;
+
+}
+
+

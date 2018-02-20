@@ -1,8 +1,17 @@
 <div class="blog body-width">
-  <div class="body-height">
+  <div>
     <% @testimonials.each do |testimonial| %>
-    <h2><%= testimonial.title %></h2>
-    <p><%= testimonial.body %></p>
+      <% if testimonial.id % 2 == 1 %>
+        <div class="left-testimonial">
+          <h2><%= testimonial.name %></h2>
+          <p><%= testimonial.content %></p>
+        </div>
+      <% else %>
+        <div class="right-testimonial">
+          <h2><%= testimonial.name %></h2>
+          <p><%= testimonial.content %></p>
+        </div>
+      <% end %>
   <% end %>
   </div>
 </div>
