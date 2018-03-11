@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :blogs
+    resources :testimonials
+
+    root to: "blogs#index"
+  end
+
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
 
